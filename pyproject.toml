@@ -1,13 +1,17 @@
 [project]
 name = "fin-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "Production-grade RAG over SEC financial filings, built with local open-source models."
 readme = "README.md"
 authors = [
-    { name = "Taha Rizvi", email = "taharizvi19@gmail.com" }
+    { name = "Taha Rizvi", email = "348241150+rizvi1111@users.noreply.github.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "lxml>=6.1.3",
+]
 
 [project.scripts]
 fin-rag = "fin_rag:main"
